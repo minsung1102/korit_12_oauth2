@@ -37,6 +37,6 @@ public class AuthController {
     // OAuth2 로그인 실패 시 호출
     @GetMapping("/oauth2/failure")
     public ResponseEntity<String> oauth2Failure() {
-        return ResponseEntity.badRequest().body("소셜 로그인에 실패했습니다");
+        return ResponseEntity.badRequest().body("소셜 로그인에 실패했습니다.");
     }
 }

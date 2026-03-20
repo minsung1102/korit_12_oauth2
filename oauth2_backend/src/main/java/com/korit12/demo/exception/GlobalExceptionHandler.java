@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-    // 비지니스 오류 시(이메일중복, 비밀번호 불일치 등)
+    // 비지니스 오류 시(이메일 중복, 비밀번호 불일치 등)
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handleIllegalArgument(IllegalArgumentException e) {
         log.warn("비지니스 오류 : {}", e.getMessage());

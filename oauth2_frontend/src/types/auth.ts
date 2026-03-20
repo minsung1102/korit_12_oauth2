@@ -13,6 +13,7 @@ export interface AuthResponse {
   token: string;
   email: string;
   name: string;
+  role: string;
 }
 
 // localStorage와 Context에 저장하는 사용자 정보
